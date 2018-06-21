@@ -1,0 +1,167 @@
+body {
+  color: white;
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: #111;
+
+  @media (min-width: 700px) {
+    font-size: 22px;
+  }
+}
+
+.Header {
+  height: 60vh;
+  background-image: url('header.png');
+  background-size: cover;
+  background-position: center;
+  border-bottom: 2px solid #D1B81B;
+  @media (min-width: 700px) {
+    height: 100vh;
+
+    background-size: 130%;
+    background-position: right 10%;
+  }
+  &__nav {
+    display: flex;
+    padding: 10px 10px;
+    @media (min-width: 700px) {
+      padding: 15px 30px;
+    }
+    &__logo {
+      text-transform: uppercase;
+      margin-right: auto;
+      font-size: 12px;
+      @media (min-width: 700px) {
+        font-size: 20px;
+      }
+      &Title {
+        color: #D1B81B;
+      }
+      &Subtitle {
+      }
+    }
+    &__link {
+      margin-left: 10px;
+      color: #D1B81B;
+      text-decoration: none;
+      @media (min-width: 700px) {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+.Shortlinks {
+  display: none;
+
+  position: relative;
+  top: -30px;
+  margin: 0 auto;
+  justify-content: space-between;
+  width: 66%;
+  @media (min-width: 700px) {
+    display: flex;
+  }
+  &__box {
+    // margin: 10px;
+    width: 20vw;
+    height: 20vw;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    &:nth-child(1) {
+      background-image: url('coaching_sportif.jpg');
+    }
+    &:nth-child(2) {
+      background-image: url('coaching_educatif.jpg');
+    }
+    &:nth-child(3) {
+      background-image: url('coaching_a_distance.jpg');
+    }
+    &:nth-child(4) {
+      background-image: url('coaching_developpement_personnel.jpg');
+    }
+    &__title {
+      width: 100%;
+      text-align: center;
+      font-size: 1.2vw;
+      text-transform: uppercase;
+      padding: 20px 0;
+      background-color: rgba($color: #000000, $alpha: .6);
+    }
+  }
+}
+
+.Histoire {
+  padding: 40px 20px;
+  @media (min-width: 700px) {
+    padding: 40px 150px;
+  }
+  &__title {
+    font-size: 21px;
+    border-bottom: 5px solid #D1B81B;
+    margin-bottom: 20px;
+    @media (min-width: 700px) {
+      font-size: 30px;
+    }
+  }
+  &__header {
+    display: flex;
+    
+    &__img {
+      display: none;
+      width: 25vw;  
+      height: 100%;
+      @media (min-width: 700px) {
+        display: block;
+      }
+    }
+    &__text {
+      font-size: 12px;
+      @media (min-width: 700px) {
+        font-size: 16px;
+        margin-left: 20px;
+      }
+    }
+  }
+  &__content {
+    font-size: 12px;
+    margin: 20px 0;
+    @media (min-width: 700px) {
+      font-size: 16px;
+    }
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.Boxes {
+  padding: 20px;
+  @media (min-width: 700px) {
+    padding: 40px 150px;
+  }
+  &__box {
+    padding: 20px 20px 0 20px;
+    background-color: #FF5136;
+    display: flex;
+    margin-bottom: 20px;
+    height: 150px;
+    &__img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+    &__text {
+      height: 80%;
+      overflow-y: auto;
+      display: block;
+      margin-left: 20px;
+      font-size: 12px;
+    }
+  }
+}
